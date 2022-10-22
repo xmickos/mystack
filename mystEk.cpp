@@ -65,48 +65,6 @@ struct mystack
 
 
 
-// void StackOutput(mystack* stk, FILE* logfile){
-//     fprintf(logfile, "LINE %d: DUMP:\nSize = %lu,\nCapacity = %lu,\ndata: \n", __LINE__, stk->size, stk->capacity);
-//
-//     if(stk->data[-1] == (double)FirstCanaree){
-//         fprintf(logfile, "  data[-1] = FirstCanaree\n");
-//     }else{
-//         fprintf(logfile, "  data[-1] = %f != FirstCanaree == %u (!)\n", stk->data[-1], FirstCanaree);
-//     }
-//
-//     int k_start = 0, k_end = 0;
-//     for(unsigned int i = 0; i < stk->capacity; i++){
-//         if(stk->data[i] != POISON){
-//             fprintf(logfile, "  data[%u] = %f\n", i, stk->data[i]);
-//         }
-//         else{
-//             k_start = i;
-//             k_end = i;
-//             break;
-//         }
-//     }
-//
-//     while(stk->data[k_end] == POISON) k_end++;
-//     k_end--;
-//     fprintf(logfile, "  data[%d - %d] = POISON\n", k_start, k_end);
-//
-//     for(unsigned int i = k_end + 1; i < stk->capacity; i++){
-//         if(stk->data[i] == POISON){
-//             fprintf(logfile, "  data[%u] = POISON\n", i);
-//         }
-//         else{
-//             fprintf(logfile, "  data[%u] = %f\n", i, stk->data[i]);
-//         }
-//     }
-//
-//     if(stk->data[stk->capacity] == (double)SecondCanaree){
-//         fprintf(logfile, "  data[stk->capacity] = SecondCanaree\n");
-//     }else{
-//         fprintf(logfile, "  data[stk->capacity] = %f != SecondCanaree == %u, (double)SecondCanaree == %f (!)\n", stk->data[stk->size], SecondCanaree, (double)SecondCanaree);
-//     }
-//     fprintf(logfile, "\n");   
-// }
-
 
 void errors_decoding(FILE* logfile){
     int count = 1;
@@ -147,15 +105,6 @@ void errors_decoding(FILE* logfile){
     }
 }
 
-// int mystackcheck(mystack* stk, FILE* logfile){
-//     ASSERT(stk, logfile);
-//     CanareeCheck(stk, logfile);
-//
-//     // fprintf(logfile, "LINE %d: stack:\nsize = %lu,\ncapacity = %lu,\ndata:", __LINE__, stk->size, stk->capacity);
-//     // StackOutput(stk, logfile);
-//     fprintf(logfile, "LINE %d: Stack checked succesfully!\n", __LINE__);
-//     fprintf(logfile, "\n");
-// }
 
 
 void FinalStackOutput(mystack* stk, FILE* logfile){
@@ -191,37 +140,8 @@ void FinalStackOutput(mystack* stk, FILE* logfile){
     fprintf(logfile, "\n");   
 }
 
-// double calculating_newsize(size_t prev_size, size_t prev_capacity, int direction){
-// 
-//     assert(prev_size != 0);
-//     assert(prev_capacity != 0);
-//     assert(direction != 0 && direction != 1);
-//     assert(prev_size < prev_capacity);
-// 
-//     if(direction){
-//         if(prev_capacity < 8) return -1.0;
-// 
-//         if(prev_capacity <= 40) return 2.0;
-// 
-//         if(prev_capacity > 40 && prev_capacity <= 100) return 1.8;
-// 
-//         if(prev_capacity > 100) return 1.5;
-//     }
-//     else{
-//             // ???                      ДОМ ШИЗЫ
-//         if(prev_capacity > 2 * prev_size) return 0.5;
-//         else return 1.0;
-//     }
-//     return 0;
-// }
 
 int mystackResize(mystack* stk, int direction, FILE* logfile){
-    // double scale_coefficient = 2;
-
-    // assert(stk);
-    // assert(stk->size > stk->capacity);      //заменить на if`ы – нефатальные assert`ы
-    // assert(stk->capacity <= 0);             //сделать условную компиляцию для debug мода
-    // assert(stk->size <= 0);
 
 
     if(stk->data == nullptr){
@@ -235,22 +155,6 @@ int mystackResize(mystack* stk, int direction, FILE* logfile){
         fprintf(logfile, "  LINE %d: (!) %s(): direction is %d\n", __LINE__, __FUNCTION__, direction);
         return -1;
     }
-
-/*                         
-*                       Зачем передавать аргумент newsize, если фун-я resize определяет новый
-*                       размер в себе ? Достаточно определить увеличение/уменьшение ? 
-*                       остальные параметры стека хранятся в его структуре. 
-*                       Direction == 1 <=> capacity возрастёт
-*                       Direction == 0 <=> capacity уменьшится
-*
-*                       Увеличение: size ––> size * scale_coeff(size) <=> scale_coeff зависит от size –
-*                       не явл. фун-ей. (хотя..?)
-*                       Уменьшение: size * 2 > capacity => capacity ––> capacity / 2 ? 
-*                       Тогда свободная зона всегда существует и равна capacity / 2 - size до recalloc`a.
-*
-*                       А когда вызывать фун-ю на уменьшение размера стека?                        
-*
-*/
 
 
     int scale_coefficient = 2;
@@ -442,12 +346,6 @@ int mystackDtor(mystack* stk, FILE* logfile){
     return 0;
 }
 
-
-// int mystackCheck(mystack* stk, FILE* logfile){
-//     ASSERT(stk, logfile);
-// 
-// 
-// }
 
 
 int main(){
