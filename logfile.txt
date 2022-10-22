@@ -1,0 +1,1360 @@
+FUNC /mystackCtor/: LINE 411: size == 5
+
+FUNC: /mystackCtor/
+  LINE 412: Assert passed!
+
+    *** Created stack ***
+
+size = 0,
+capacity = 5.
+LINE 164: DUMP:
+Size = 0,
+Capacity = 5,
+data: 
+  data[-1] = FirstCanaree
+  data[0:5] = POISON
+  data[stk->capacity] = SecondCanaree
+
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 0.000000
+  LINE 358: Pushed stk->data[0]: POISON ––> 0.000000, stk->size: 0 ––> 1
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 1.000000
+  LINE 358: Pushed stk->data[1]: POISON ––> 1.000000, stk->size: 1 ––> 2
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 2.000000
+  LINE 358: Pushed stk->data[2]: POISON ––> 2.000000, stk->size: 2 ––> 3
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 3.000000
+  LINE 358: Pushed stk->data[3]: POISON ––> 3.000000, stk->size: 3 ––> 4
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 4.000000
+  LINE 358: Pushed stk->data[4]: POISON ––> 4.000000, stk->size: 4 ––> 5
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 5.000000
+  LINE 336: *RESIZING UP*
+FUNC: /mystackResize/
+  LINE 232: Assert passed!
+  Both canarees are alive!
+  LINE 258: direction is 1
+FUNC: /mystackResize/, LINE 262: capacity = 5
+  LINE 279: UPPER RESIZED: stk->capacity = 10
+  LINE 358: Pushed stk->data[5]: POISON ––> 5.000000, stk->size: 5 ––> 6
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 6.000000
+  LINE 358: Pushed stk->data[6]: POISON ––> 6.000000, stk->size: 6 ––> 7
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 7.000000
+  LINE 358: Pushed stk->data[7]: POISON ––> 7.000000, stk->size: 7 ––> 8
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 8.000000
+  LINE 358: Pushed stk->data[8]: POISON ––> 8.000000, stk->size: 8 ––> 9
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 9.000000
+  LINE 358: Pushed stk->data[9]: POISON ––> 9.000000, stk->size: 9 ––> 10
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 10.000000
+  LINE 336: *RESIZING UP*
+FUNC: /mystackResize/
+  LINE 232: Assert passed!
+  Both canarees are alive!
+  LINE 258: direction is 1
+FUNC: /mystackResize/, LINE 262: capacity = 10
+  LINE 279: UPPER RESIZED: stk->capacity = 20
+  LINE 358: Pushed stk->data[10]: POISON ––> 10.000000, stk->size: 10 ––> 11
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 11.000000
+  LINE 358: Pushed stk->data[11]: POISON ––> 11.000000, stk->size: 11 ––> 12
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 12.000000
+  LINE 358: Pushed stk->data[12]: POISON ––> 12.000000, stk->size: 12 ––> 13
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 13.000000
+  LINE 358: Pushed stk->data[13]: POISON ––> 13.000000, stk->size: 13 ––> 14
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 14.000000
+  LINE 358: Pushed stk->data[14]: POISON ––> 14.000000, stk->size: 14 ––> 15
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 15.000000
+  LINE 358: Pushed stk->data[15]: POISON ––> 15.000000, stk->size: 15 ––> 16
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 16.000000
+  LINE 358: Pushed stk->data[16]: POISON ––> 16.000000, stk->size: 16 ––> 17
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 17.000000
+  LINE 358: Pushed stk->data[17]: POISON ––> 17.000000, stk->size: 17 ––> 18
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 18.000000
+  LINE 358: Pushed stk->data[18]: POISON ––> 18.000000, stk->size: 18 ––> 19
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 19.000000
+  LINE 358: Pushed stk->data[19]: POISON ––> 19.000000, stk->size: 19 ––> 20
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 20.000000
+  LINE 336: *RESIZING UP*
+FUNC: /mystackResize/
+  LINE 232: Assert passed!
+  Both canarees are alive!
+  LINE 258: direction is 1
+FUNC: /mystackResize/, LINE 262: capacity = 20
+  LINE 279: UPPER RESIZED: stk->capacity = 40
+  LINE 358: Pushed stk->data[20]: POISON ––> 20.000000, stk->size: 20 ––> 21
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 21.000000
+  LINE 358: Pushed stk->data[21]: POISON ––> 21.000000, stk->size: 21 ––> 22
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 22.000000
+  LINE 358: Pushed stk->data[22]: POISON ––> 22.000000, stk->size: 22 ––> 23
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 23.000000
+  LINE 358: Pushed stk->data[23]: POISON ––> 23.000000, stk->size: 23 ––> 24
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 24.000000
+  LINE 358: Pushed stk->data[24]: POISON ––> 24.000000, stk->size: 24 ––> 25
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 25.000000
+  LINE 358: Pushed stk->data[25]: POISON ––> 25.000000, stk->size: 25 ––> 26
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 26.000000
+  LINE 358: Pushed stk->data[26]: POISON ––> 26.000000, stk->size: 26 ––> 27
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 27.000000
+  LINE 358: Pushed stk->data[27]: POISON ––> 27.000000, stk->size: 27 ––> 28
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 28.000000
+  LINE 358: Pushed stk->data[28]: POISON ––> 28.000000, stk->size: 28 ––> 29
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 29.000000
+  LINE 358: Pushed stk->data[29]: POISON ––> 29.000000, stk->size: 29 ––> 30
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 30.000000
+  LINE 358: Pushed stk->data[30]: POISON ––> 30.000000, stk->size: 30 ––> 31
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 31.000000
+  LINE 358: Pushed stk->data[31]: POISON ––> 31.000000, stk->size: 31 ––> 32
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 32.000000
+  LINE 358: Pushed stk->data[32]: POISON ––> 32.000000, stk->size: 32 ––> 33
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 33.000000
+  LINE 358: Pushed stk->data[33]: POISON ––> 33.000000, stk->size: 33 ––> 34
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 34.000000
+  LINE 358: Pushed stk->data[34]: POISON ––> 34.000000, stk->size: 34 ––> 35
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 35.000000
+  LINE 358: Pushed stk->data[35]: POISON ––> 35.000000, stk->size: 35 ––> 36
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 36.000000
+  LINE 358: Pushed stk->data[36]: POISON ––> 36.000000, stk->size: 36 ––> 37
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 37.000000
+  LINE 358: Pushed stk->data[37]: POISON ––> 37.000000, stk->size: 37 ––> 38
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 38.000000
+  LINE 358: Pushed stk->data[38]: POISON ––> 38.000000, stk->size: 38 ––> 39
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 39.000000
+  LINE 358: Pushed stk->data[39]: POISON ––> 39.000000, stk->size: 39 ––> 40
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 40.000000
+  LINE 336: *RESIZING UP*
+FUNC: /mystackResize/
+  LINE 232: Assert passed!
+  Both canarees are alive!
+  LINE 258: direction is 1
+FUNC: /mystackResize/, LINE 262: capacity = 40
+  LINE 279: UPPER RESIZED: stk->capacity = 80
+  LINE 358: Pushed stk->data[40]: POISON ––> 40.000000, stk->size: 40 ––> 41
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 41.000000
+  LINE 358: Pushed stk->data[41]: POISON ––> 41.000000, stk->size: 41 ––> 42
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 42.000000
+  LINE 358: Pushed stk->data[42]: POISON ––> 42.000000, stk->size: 42 ––> 43
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 43.000000
+  LINE 358: Pushed stk->data[43]: POISON ––> 43.000000, stk->size: 43 ––> 44
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 44.000000
+  LINE 358: Pushed stk->data[44]: POISON ––> 44.000000, stk->size: 44 ––> 45
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 45.000000
+  LINE 358: Pushed stk->data[45]: POISON ––> 45.000000, stk->size: 45 ––> 46
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 46.000000
+  LINE 358: Pushed stk->data[46]: POISON ––> 46.000000, stk->size: 46 ––> 47
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 47.000000
+  LINE 358: Pushed stk->data[47]: POISON ––> 47.000000, stk->size: 47 ––> 48
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 48.000000
+  LINE 358: Pushed stk->data[48]: POISON ––> 48.000000, stk->size: 48 ––> 49
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 49.000000
+  LINE 358: Pushed stk->data[49]: POISON ––> 49.000000, stk->size: 49 ––> 50
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 50.000000
+  LINE 358: Pushed stk->data[50]: POISON ––> 50.000000, stk->size: 50 ––> 51
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 51.000000
+  LINE 358: Pushed stk->data[51]: POISON ––> 51.000000, stk->size: 51 ––> 52
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 52.000000
+  LINE 358: Pushed stk->data[52]: POISON ––> 52.000000, stk->size: 52 ––> 53
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 53.000000
+  LINE 358: Pushed stk->data[53]: POISON ––> 53.000000, stk->size: 53 ––> 54
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 54.000000
+  LINE 358: Pushed stk->data[54]: POISON ––> 54.000000, stk->size: 54 ––> 55
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 55.000000
+  LINE 358: Pushed stk->data[55]: POISON ––> 55.000000, stk->size: 55 ––> 56
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 56.000000
+  LINE 358: Pushed stk->data[56]: POISON ––> 56.000000, stk->size: 56 ––> 57
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 57.000000
+  LINE 358: Pushed stk->data[57]: POISON ––> 57.000000, stk->size: 57 ––> 58
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 58.000000
+  LINE 358: Pushed stk->data[58]: POISON ––> 58.000000, stk->size: 58 ––> 59
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 59.000000
+  LINE 358: Pushed stk->data[59]: POISON ––> 59.000000, stk->size: 59 ––> 60
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 60.000000
+  LINE 358: Pushed stk->data[60]: POISON ––> 60.000000, stk->size: 60 ––> 61
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 61.000000
+  LINE 358: Pushed stk->data[61]: POISON ––> 61.000000, stk->size: 61 ––> 62
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 62.000000
+  LINE 358: Pushed stk->data[62]: POISON ––> 62.000000, stk->size: 62 ––> 63
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 63.000000
+  LINE 358: Pushed stk->data[63]: POISON ––> 63.000000, stk->size: 63 ––> 64
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 64.000000
+  LINE 358: Pushed stk->data[64]: POISON ––> 64.000000, stk->size: 64 ––> 65
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 65.000000
+  LINE 358: Pushed stk->data[65]: POISON ––> 65.000000, stk->size: 65 ––> 66
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 66.000000
+  LINE 358: Pushed stk->data[66]: POISON ––> 66.000000, stk->size: 66 ––> 67
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 67.000000
+  LINE 358: Pushed stk->data[67]: POISON ––> 67.000000, stk->size: 67 ––> 68
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 68.000000
+  LINE 358: Pushed stk->data[68]: POISON ––> 68.000000, stk->size: 68 ––> 69
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 69.000000
+  LINE 358: Pushed stk->data[69]: POISON ––> 69.000000, stk->size: 69 ––> 70
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 70.000000
+  LINE 358: Pushed stk->data[70]: POISON ––> 70.000000, stk->size: 70 ––> 71
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 71.000000
+  LINE 358: Pushed stk->data[71]: POISON ––> 71.000000, stk->size: 71 ––> 72
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 72.000000
+  LINE 358: Pushed stk->data[72]: POISON ––> 72.000000, stk->size: 72 ––> 73
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 73.000000
+  LINE 358: Pushed stk->data[73]: POISON ––> 73.000000, stk->size: 73 ––> 74
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 74.000000
+  LINE 358: Pushed stk->data[74]: POISON ––> 74.000000, stk->size: 74 ––> 75
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 75.000000
+  LINE 358: Pushed stk->data[75]: POISON ––> 75.000000, stk->size: 75 ––> 76
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 76.000000
+  LINE 358: Pushed stk->data[76]: POISON ––> 76.000000, stk->size: 76 ––> 77
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 77.000000
+  LINE 358: Pushed stk->data[77]: POISON ––> 77.000000, stk->size: 77 ––> 78
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 78.000000
+  LINE 358: Pushed stk->data[78]: POISON ––> 78.000000, stk->size: 78 ––> 79
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 79.000000
+  LINE 358: Pushed stk->data[79]: POISON ––> 79.000000, stk->size: 79 ––> 80
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 80.000000
+  LINE 336: *RESIZING UP*
+FUNC: /mystackResize/
+  LINE 232: Assert passed!
+  Both canarees are alive!
+  LINE 258: direction is 1
+FUNC: /mystackResize/, LINE 262: capacity = 80
+  LINE 279: UPPER RESIZED: stk->capacity = 160
+  LINE 358: Pushed stk->data[80]: POISON ––> 80.000000, stk->size: 80 ––> 81
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 81.000000
+  LINE 358: Pushed stk->data[81]: POISON ––> 81.000000, stk->size: 81 ––> 82
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 82.000000
+  LINE 358: Pushed stk->data[82]: POISON ––> 82.000000, stk->size: 82 ––> 83
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 83.000000
+  LINE 358: Pushed stk->data[83]: POISON ––> 83.000000, stk->size: 83 ––> 84
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 84.000000
+  LINE 358: Pushed stk->data[84]: POISON ––> 84.000000, stk->size: 84 ––> 85
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 85.000000
+  LINE 358: Pushed stk->data[85]: POISON ––> 85.000000, stk->size: 85 ––> 86
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 86.000000
+  LINE 358: Pushed stk->data[86]: POISON ––> 86.000000, stk->size: 86 ––> 87
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 87.000000
+  LINE 358: Pushed stk->data[87]: POISON ––> 87.000000, stk->size: 87 ––> 88
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 88.000000
+  LINE 358: Pushed stk->data[88]: POISON ––> 88.000000, stk->size: 88 ––> 89
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 89.000000
+  LINE 358: Pushed stk->data[89]: POISON ––> 89.000000, stk->size: 89 ––> 90
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 90.000000
+  LINE 358: Pushed stk->data[90]: POISON ––> 90.000000, stk->size: 90 ––> 91
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 91.000000
+  LINE 358: Pushed stk->data[91]: POISON ––> 91.000000, stk->size: 91 ––> 92
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 92.000000
+  LINE 358: Pushed stk->data[92]: POISON ––> 92.000000, stk->size: 92 ––> 93
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 93.000000
+  LINE 358: Pushed stk->data[93]: POISON ––> 93.000000, stk->size: 93 ––> 94
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 94.000000
+  LINE 358: Pushed stk->data[94]: POISON ––> 94.000000, stk->size: 94 ––> 95
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 95.000000
+  LINE 358: Pushed stk->data[95]: POISON ––> 95.000000, stk->size: 95 ––> 96
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 96.000000
+  LINE 358: Pushed stk->data[96]: POISON ––> 96.000000, stk->size: 96 ––> 97
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 97.000000
+  LINE 358: Pushed stk->data[97]: POISON ––> 97.000000, stk->size: 97 ––> 98
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 98.000000
+  LINE 358: Pushed stk->data[98]: POISON ––> 98.000000, stk->size: 98 ––> 99
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 99.000000
+  LINE 358: Pushed stk->data[99]: POISON ––> 99.000000, stk->size: 99 ––> 100
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 100.000000
+  LINE 358: Pushed stk->data[100]: POISON ––> 100.000000, stk->size: 100 ––> 101
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 101.000000
+  LINE 358: Pushed stk->data[101]: POISON ––> 101.000000, stk->size: 101 ––> 102
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 102.000000
+  LINE 358: Pushed stk->data[102]: POISON ––> 102.000000, stk->size: 102 ––> 103
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 103.000000
+  LINE 358: Pushed stk->data[103]: POISON ––> 103.000000, stk->size: 103 ––> 104
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 104.000000
+  LINE 358: Pushed stk->data[104]: POISON ––> 104.000000, stk->size: 104 ––> 105
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 105.000000
+  LINE 358: Pushed stk->data[105]: POISON ––> 105.000000, stk->size: 105 ––> 106
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 106.000000
+  LINE 358: Pushed stk->data[106]: POISON ––> 106.000000, stk->size: 106 ––> 107
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 107.000000
+  LINE 358: Pushed stk->data[107]: POISON ––> 107.000000, stk->size: 107 ––> 108
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 108.000000
+  LINE 358: Pushed stk->data[108]: POISON ––> 108.000000, stk->size: 108 ––> 109
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 109.000000
+  LINE 358: Pushed stk->data[109]: POISON ––> 109.000000, stk->size: 109 ––> 110
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 110.000000
+  LINE 358: Pushed stk->data[110]: POISON ––> 110.000000, stk->size: 110 ––> 111
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 111.000000
+  LINE 358: Pushed stk->data[111]: POISON ––> 111.000000, stk->size: 111 ––> 112
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 112.000000
+  LINE 358: Pushed stk->data[112]: POISON ––> 112.000000, stk->size: 112 ––> 113
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 113.000000
+  LINE 358: Pushed stk->data[113]: POISON ––> 113.000000, stk->size: 113 ––> 114
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 114.000000
+  LINE 358: Pushed stk->data[114]: POISON ––> 114.000000, stk->size: 114 ––> 115
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 115.000000
+  LINE 358: Pushed stk->data[115]: POISON ––> 115.000000, stk->size: 115 ––> 116
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 116.000000
+  LINE 358: Pushed stk->data[116]: POISON ––> 116.000000, stk->size: 116 ––> 117
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 117.000000
+  LINE 358: Pushed stk->data[117]: POISON ––> 117.000000, stk->size: 117 ––> 118
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 118.000000
+  LINE 358: Pushed stk->data[118]: POISON ––> 118.000000, stk->size: 118 ––> 119
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 119.000000
+  LINE 358: Pushed stk->data[119]: POISON ––> 119.000000, stk->size: 119 ––> 120
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 0.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 1.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 2.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 3.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 4.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 5.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 6.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 7.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 8.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 9.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 10.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 11.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 12.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 13.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 14.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 15.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 16.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 17.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 18.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 19.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 20.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 21.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 22.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 23.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 24.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 25.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 26.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 27.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 28.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 29.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 30.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 31.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 32.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 33.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 34.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 35.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 36.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 37.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 38.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 39.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 40.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 41.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 42.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 43.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 44.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 45.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 46.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 47.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 48.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 49.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 50.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 51.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 52.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 53.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 54.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 55.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 56.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 57.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 58.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 59.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 60.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 61.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 62.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 63.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 64.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 65.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 66.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 67.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 68.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 69.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 70.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 71.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 72.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 73.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 74.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 75.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 76.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 77.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 78.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 79.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 80.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 377: *RESIZING DOWN*
+FUNC: /mystackResize/
+  LINE 232: Assert passed!
+  Both canarees are alive!
+  LINE 258: direction is 0
+LINE 164: DUMP:
+Size = 39,
+Capacity = 160,
+data: 
+  data[-1] = FirstCanaree
+  data[0] = 81.000000
+  data[1] = 82.000000
+  data[2] = 83.000000
+  data[3] = 84.000000
+  data[4] = 85.000000
+  data[5] = 86.000000
+  data[6] = 87.000000
+  data[7] = 88.000000
+  data[8] = 89.000000
+  data[9] = 90.000000
+  data[10] = 91.000000
+  data[11] = 92.000000
+  data[12] = 93.000000
+  data[13] = 94.000000
+  data[14] = 95.000000
+  data[15] = 96.000000
+  data[16] = 97.000000
+  data[17] = 98.000000
+  data[18] = 99.000000
+  data[19] = 100.000000
+  data[20] = 101.000000
+  data[21] = 102.000000
+  data[22] = 103.000000
+  data[23] = 104.000000
+  data[24] = 105.000000
+  data[25] = 106.000000
+  data[26] = 107.000000
+  data[27] = 108.000000
+  data[28] = 109.000000
+  data[29] = 110.000000
+  data[30] = 111.000000
+  data[31] = 112.000000
+  data[32] = 113.000000
+  data[33] = 114.000000
+  data[34] = 115.000000
+  data[35] = 116.000000
+  data[36] = 117.000000
+  data[37] = 118.000000
+  data[38] = 119.000000
+  data[39:160] = POISON
+  data[stk->capacity] = SecondCanaree
+
+  Both canarees are alive!
+  LINE 311: DOWN RESIZED: stk->capacity = 80, stk->size: 39
+  Both canarees are alive!  LINE 389: Popping data[0] = 81.000000
+
+FUNC: /mystackPop/
+  LINE 373: Assert passed!
+  LINE 389: Popping data[0] = 82.000000
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = 9.000000
+  LINE 358: Pushed stk->data[37]: POISON ––> 9.000000, stk->size: 37 ––> 38
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = -2.000000
+  LINE 358: Pushed stk->data[38]: POISON ––> -2.000000, stk->size: 38 ––> 39
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = -2.000000
+  LINE 358: Pushed stk->data[39]: POISON ––> -2.000000, stk->size: 39 ––> 40
+
+FUNC: /mystackPush/
+  LINE 328: Assert passed!
+  Both canarees are alive!
+FUNC: /mystackPush/
+  LINE 332: Pushing value = -2.000000
+  LINE 358: Pushed stk->data[40]: POISON ––> -2.000000, stk->size: 40 ––> 41
+
+Final stack is:
+LINE 164: DUMP:
+Size = 41,
+Capacity = 80,
+data: 
+  data[-1] = FirstCanaree
+  data[0] = 83.000000
+  data[1] = 84.000000
+  data[2] = 85.000000
+  data[3] = 86.000000
+  data[4] = 87.000000
+  data[5] = 88.000000
+  data[6] = 89.000000
+  data[7] = 90.000000
+  data[8] = 91.000000
+  data[9] = 92.000000
+  data[10] = 93.000000
+  data[11] = 94.000000
+  data[12] = 95.000000
+  data[13] = 96.000000
+  data[14] = 97.000000
+  data[15] = 98.000000
+  data[16] = 99.000000
+  data[17] = 100.000000
+  data[18] = 101.000000
+  data[19] = 102.000000
+  data[20] = 103.000000
+  data[21] = 104.000000
+  data[22] = 105.000000
+  data[23] = 106.000000
+  data[24] = 107.000000
+  data[25] = 108.000000
+  data[26] = 109.000000
+  data[27] = 110.000000
+  data[28] = 111.000000
+  data[29] = 112.000000
+  data[30] = 113.000000
+  data[31] = 114.000000
+  data[32] = 115.000000
+  data[33] = 116.000000
+  data[34] = 117.000000
+  data[35] = 118.000000
+  data[36] = 119.000000
+  data[37] = 9.000000
+  data[38] = -2.000000
+  data[39] = -2.000000
+  data[40] = -2.000000
+  data[41:80] = POISON
+  data[stk->capacity] = SecondCanaree
+
+
+FUNC: /mystackDtor/
+  LINE 436: Assert passed!
