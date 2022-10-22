@@ -65,7 +65,6 @@ struct mystack
 
 
 
-
 void errors_decoding(FILE* logfile){
     int count = 1;
     if(errors != 0){
@@ -102,9 +101,10 @@ void errors_decoding(FILE* logfile){
             fprintf(logfile, " %d)  second canaree`s dead!\n", count);
         }
         fprintf(logfile, "Total errors count: %d\n", count);
+    }else{
+        fprintf(logfile, "\nNo errors finded!\n");
     }
 }
-
 
 
 void FinalStackOutput(mystack* stk, FILE* logfile){
@@ -142,8 +142,7 @@ void FinalStackOutput(mystack* stk, FILE* logfile){
 
 
 int mystackResize(mystack* stk, int direction, FILE* logfile){
-
-
+    
     if(stk->data == nullptr){
         fprintf(logfile, "LINE %d: FUNC: /%s/: (!) stk->data is nullptr!\n", __LINE__, __FUNCTION__);
         errors = errors | data_null;
@@ -337,15 +336,24 @@ int mystackCtor(mystack* stk, int size, FILE* logfile){
 }
 
 int mystackDtor(mystack* stk, FILE* logfile){
-    ASSERT(stk, logfile, errors);
-    for(int i = 0; i < stk->capacity; i++){
-        stk->data[i] = POISON;
+    if(stk == nullptr){
+        return -1;
+    }else{
+        for(int i = 0; i < stk->capacity; i++){
+            stk->data[i] = POISON;
+        }
+        free(stk->data - 1);
+        // free((void*)stk);
+        return 0;
     }
-    free((void*)stk->data);
-    free((void*)stk);
-    return 0;
 }
 
+
+// int mystackCheck(mystack* stk, FILE* logfile){
+//     ASSERT(stk, logfile);
+// 
+// 
+// }
 
 
 int main(){
