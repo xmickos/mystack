@@ -80,13 +80,6 @@ void FinalStackOutput(mystack* stk, FILE* logfile){
 
 
 int mystackResize(mystack* stk, int direction, FILE* logfile){
-    // double scale_coefficient = 2;
-
-    // assert(stk);
-    // assert(stk->size > stk->capacity);      //заменить на if`ы – нефатальные assert`ы
-    // assert(stk->capacity <= 0);             //сделать условную компиляцию для debug мода
-    // assert(stk->size <= 0);
-
 
     if(stk->data == nullptr){
         fprintf(logfile, "LINE %d: FUNC: /%s/: (!) stk->data is nullptr!\n", __LINE__, __FUNCTION__);
@@ -99,22 +92,6 @@ int mystackResize(mystack* stk, int direction, FILE* logfile){
         fprintf(logfile, "  LINE %d: (!) %s(): direction is %d\n", __LINE__, __FUNCTION__, direction);
         return -1;
     }
-
-/*                         
-*                       Зачем передавать аргумент newsize, если фун-я resize определяет новый
-*                       размер в себе ? Достаточно определить увеличение/уменьшение ? 
-*                       остальные параметры стека хранятся в его структуре. 
-*                       Direction == 1 <=> capacity возрастёт
-*                       Direction == 0 <=> capacity уменьшится
-*
-*                       Увеличение: size ––> size * scale_coeff(size) <=> scale_coeff зависит от size –
-*                       не явл. фун-ей. (хотя..?)
-*                       Уменьшение: size * 2 > capacity => capacity ––> capacity / 2 ? 
-*                       Тогда свободная зона всегда существует и равна capacity / 2 - size до recalloc`a.
-*
-*                       А когда вызывать фун-ю на уменьшение размера стека?                        
-*
-*/
 
 
     int scale_coefficient = 2;
