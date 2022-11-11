@@ -2,7 +2,8 @@
 #include <assert.h>
 #include <iostream>
 #include <math.h>
-#include </Users/xmickos/Desktop/govno.jopa.kosmos/mystacklol/mystEkfuncs.cpp>
+#include "mystEkfuncs.cpp"
+
 
 int main(){
     FILE* logfile = fopen("logfile.txt", "w");
@@ -10,11 +11,13 @@ int main(){
 
     mystackCtor(&stk1, 5, logfile);
 
+    MainFinalStackOutput(&stk1, logfile);
 
     for(int i = 0; i < 120; i++){
         mystackPush(&stk1, i, logfile);
     }
 
+    MainFinalStackOutput(&stk1, logfile);
 
     mystackPop(&stk1, logfile);
     mystackPop(&stk1, logfile);
@@ -34,7 +37,7 @@ int main(){
 
     fprintf(logfile, "\nFinal stack is:\n");  
 
-    FinalStackOutput(&stk1, logfile);    
+    MainFinalStackOutput(&stk1, logfile);
     
 
     mystackDtor(&stk1, logfile);
@@ -47,10 +50,10 @@ int main(){
 
 /*          Возможные ошибки стека:
 *   stk == nullptr                                       = 2^0 
-*   stk -> data == nullptr                               = 2^1
-*   stk -> size <= 0                                     = 2^2
-*   stk -> capacity <= 0                                 = 2^3
-*   stk -> size < stk -> capacity                        = 2^4
+*   stk -> data = nullptr                                = 2^1
+*   stk -> size = 0                                      = 2^2
+*   stk -> capacity = 0                                  = 2^3
+*   stk -> size > stk -> capacity                        = 2^4
 *   в элементах идущих после size лежит не POISON        = 2^5
 *   первая канарейка мерта                               = 2^6
 *   вторая канарейка мертва                              = 2^7
